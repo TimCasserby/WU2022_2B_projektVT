@@ -2,11 +2,12 @@
     box-sizing: border-box;
     margin: 2px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-shadow: -2px -2px 0 rgb(49, 48, 48), 2px -2px 0 rgb(49, 48, 48), -2px 2px 0 rgb(49, 48, 48), 2px 2px 0 rgb(49, 48, 48);
+    text-decoration: none;
 }
 
 #indexbody{
     display: flex;
+    justify-content: center;
     align-items: center;
     align-content: center;
     background: url("../img/raindrops.jpg");
@@ -14,13 +15,16 @@
 }
 
 h1{
+    text-shadow: -2px -2px 0 rgb(49, 48, 48), 2px -2px 0 rgb(49, 48, 48), -2px 2px 0 rgb(49, 48, 48), 2px 2px 0 rgb(49, 48, 48);
     color: orange;
-    font-size: 14vw;
+    font-size: 13vw;
+    
 }
 
 h2{
+    text-shadow: -2px -2px 0 rgb(49, 48, 48), 2px -2px 0 rgb(49, 48, 48), -2px 2px 0 rgb(49, 48, 48), 2px 2px 0 rgb(49, 48, 48);
     color: orange;
-    font-size: 7vw;
+    font-size: 6vw;
 }
 
 #schooltitle{
@@ -31,7 +35,7 @@ h2{
     background: black;
     width: 90vw;
     height: 140px;
-    margin: 0px;
+    margin: 10px;
 }
 
 #indexmenu{
@@ -56,9 +60,88 @@ align-items: center;
     font-size: 11vw;
     margin: 5px;
     width: 60vw;
+    border-radius: 4px;
+}
+
+.indexnavtext{
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid white; */
+    background: rgb(168, 109, 0);
+    font-size: 11vw;
+    margin: 10px;
+    width: 93%;
 }
 
 .indexnav:hover{
     cursor: pointer;
     background: grey;
+}
+
+@media screen and (min-width: 630px){
+    #indexmenu{
+        flex-direction: row;
+        
+    }
+
+    .indexnav{
+        width: 20vw;
+        height: 100px;
+    }
+
+    .indexnavtext{
+        font-size: 3.6vw;
+    }
+
+    h1{
+        font-size: 80px;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    #schooltitle{
+        width: 700px;
+    }
+}
+
+.pageheader{
+    display: flex;
+    align-items: center;
+    background: black;
+    width: 100vw;
+    height: 100px;
+    margin: 0px;
+    padding: 20px;
+    border: 4px solid orange;
+}
+
+#styrelsetext{
+    color: white;
+    margin: 0 px;
+}
+
+#styrelsenbody{
+    margin: 0px;
+}
+
+#styrelsesection{
+    background: url("../img/raindrops.jpg"); 
+    background-size: 100vw;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: rgb(223,144,70);
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.burger{
+    margin-right: 3.125rem;
+    cursor: pointer;
 }
