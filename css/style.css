@@ -117,6 +117,7 @@ align-items: center;
     margin: 0px;
     padding: 20px;
     border: 4px solid orange;
+    /* position: sticky; */
 }
 
 #styrelsetext{
@@ -134,14 +135,54 @@ align-items: center;
 }
 
 .burger div{
-    width: 25px;
-    height: 3px;
-    background-color: rgb(223,144,70);
+    width: 40px;
+    height: 7px;
+     background-color: white;
+     border: 1px solid grey;
     margin: 5px;
     border-radius: 5px;
 }
 
 .burger{
+    position: fixed;
+    right: 0px;
     margin-right: 3.125rem;
     cursor: pointer;
+}
+
+html{
+    margin: 0px;    
+}
+
+.toggle #linje2{
+    transform: rotate(-90deg) translate(0px, 0px);
+}
+
+.toggle #linje1{
+    transform: rotate(-45deg) translate(-10px, 20px) scale(0.5, 1);
+}
+
+.toggle #linje3{
+    transform: rotate(45deg) translate(-6px, 3px) scale(0.5, 1);
+}
+
+#styrelsesection article{
+    display: grid;
+    grid-template-areas:
+    "BILD NAMN"
+    "BILD INFO"
+    "BILD KONTAKT";
+
+    grid-template-rows: 8vh, 15vh, 5vh;
+    grid-template-columns: 40vw, 40vw;
+    width: 200px;
+}
+ /* ID ÄR HASHTAG KLASS ÄR PUNKT */
+.styrelseimg{
+    width: 100px;
+    height: auto;
+}
+
+#tim{
+    width: 200px;
 }
