@@ -80,33 +80,6 @@ align-items: center;
     background: grey;
 }
 
-@media screen and (min-width: 630px){
-    #indexmenu{
-        flex-direction: row;
-        
-    }
-
-    .indexnav{
-        width: 20vw;
-        height: 100px;
-    }
-
-    .indexnavtext{
-        font-size: 3.6vw;
-    }
-
-    h1{
-        font-size: 80px;
-    }
-
-    h2{
-        font-size: 30px;
-    }
-
-    #schooltitle{
-        width: 700px;
-    }
-}
 
 .pageheader{
     display: flex;
@@ -172,16 +145,18 @@ html{
     "BILD INFO"
     "BILD KONT";
 
-    grid-template-rows: 8vh, 15vh, 5vh;
+    grid-template-rows: 8fr, 15fr, 5fr;
     grid-template-columns: 40vw, 40vw;
-    width: 400px;
-    height: 28vh;
+    width: 95vw;
+    height: 30vh;
     border: 3px solid black;
 }
  /* ID ÄR HASHTAG KLASS ÄR PUNKT */
 .styrelseimg{
-    width: 100px;
+    width: 28.5vh; 
+    border: 3px solid black;
     height: auto;
+    
 }
 
 #tim{
@@ -204,8 +179,78 @@ html{
 
 #styrelsesection article h3{
     grid-area: INFO;
+    background-color: rgba(255, 255, 255, 0.568);
+    color: black;
 }
 
 #styrelsesection article h4{
     grid-area: KONT;
+    background-color: rgba(255, 166, 0, 0.603);
+}
+
+
+#navbar{
+    position: absolute;
+    right: 1vw;
+    margin: 10px;
+}
+
+
+
+
+/* HÄR HAR VI DESKTOP LAYOUT */
+
+@media screen and (min-width: 630px){
+    #indexmenu{
+        flex-direction: row;
+        
+    }
+
+    .indexnav{
+        width: 20vw;
+        height: 100px;
+    }
+
+    .indexnavtext{
+        font-size: 3.6vw;
+    }
+
+    h1{
+        font-size: 80px;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    #schooltitle{
+        width: 700px;
+    }
+
+    #styrelsesection article{
+        grid-template-areas:
+        "BILD"
+        "NAMN"
+        "INFO"
+        "KONT";
+    
+    
+        grid-template-rows: 15fr, 5fr, 5fr, 3fr;
+        grid-template-columns: 15vw;
+        width: 20vw;
+        height: 70vh;
+       
+    }
+
+    #styrelsesection{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .styrelseimg{
+        width: 18vw; 
+        height: auto;
+        
+    }
+
 }
