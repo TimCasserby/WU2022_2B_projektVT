@@ -1,9 +1,12 @@
 
 const burger = document.querySelector(".burger")
-// const nav = document.querySelector(".nav-links")
+const nav = document.getElementById('navbar')
+
+
 
 function toggleMenu(){
-    // nav.classList.toggle("nav-active")
+    // console.log(nav)
+    nav.classList.toggle("nav-active")
     burger.classList.toggle("toggle")
 }
 

@@ -138,6 +138,8 @@ html{
     transform: rotate(45deg) translate(-6px, 3px) scale(0.5, 1);
 }
 
+
+
 #styrelsesection article{
     display: grid;
     grid-template-areas:
@@ -190,12 +192,31 @@ html{
 
 
 #navbar{
-    position: absolute;
-    right: 1vw;
     margin: 10px;
+    position: absolute;
+    left: -90vw;
+    margin: 10px;
+    transition: all 0.5s;
+}
+
+.navbarbutton{
+    display: flex;
+    color: white;
+    border: 2px solid white;
+    background: black;
+    font-size: 11vw;
+    margin: 5px;
+    width: 20vw;
+    border-radius: 4px;
 }
 
 
+
+.nav-active{
+    transform: translateX(200vw);
+    transition: all 0.5s;
+    transform: translateX(168vw);
+}
 
 
 /* HÄR HAR VI DESKTOP LAYOUT */
