@@ -4,6 +4,9 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
 }
+html {
+    width: 100vw;
+}
 
 #indexbody{
     display: flex;
@@ -82,6 +85,7 @@ align-items: center;
 
 
 .pageheader{
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     background: black;
@@ -98,12 +102,23 @@ align-items: center;
     margin: 0 px;
 }
 
+#htmltag{
+    width: 100vw;
+}
 
 
 #styrelsenbody{
     background: url("../img/raindrops.jpg"); 
     background-size: 100vw;
     margin: 0px;
+    width: 100%;
+}
+
+#maskinerbody{
+    background: url("../img/raindrops.jpg"); 
+    background-size: 100vw;
+    margin: 0px;
+    width: 100%;
 }
 
 .burger div{
@@ -147,8 +162,8 @@ html{
     "BILD INFO"
     "BILD KONT";
 
-    grid-template-rows: 8fr, 15fr, 5fr;
-    grid-template-columns: 40vw, 40vw;
+    grid-template-rows: 8fr 15fr 5fr;
+    grid-template-columns: 40vw 54vw;
     width: 95vw;
     height: 30vh;
     border: 3px solid black;
@@ -171,21 +186,21 @@ html{
     margin: 5px;
 }
 
-#styrelsesection article img{
+article img{
     grid-area: BILD;
 }
 
-#styrelsesection article h2{
+article h2{
     grid-area: NAMN;
 }
 
-#styrelsesection article h3{
+article h3{
     grid-area: INFO;
     background-color: rgba(255, 255, 255, 0.568);
     color: black;
 }
 
-#styrelsesection article h4{
+article h4{
     grid-area: KONT;
     background-color: rgba(255, 166, 0, 0.603);
 }
@@ -194,9 +209,10 @@ html{
 #navbar{
     margin: 10px;
     position: absolute;
-    left: -90vw;
+    left: -135vw;
     margin: 10px;
     transition: all 0.5s;
+    /* width: 100vw; */
 }
 
 .navbarbutton{
@@ -206,7 +222,7 @@ html{
     background: black;
     font-size: 11vw;
     margin: 5px;
-    width: 20vw;
+    width: 60vw;
     border-radius: 4px;
 }
 
@@ -218,6 +234,41 @@ html{
     transform: translateX(168vw);
 }
 
+.machineimg{
+    width: 70vw;
+    height: auto;
+    border: 3px solid black;
+}
+
+#maskinersection article{
+    border: 3px solid black;
+    margin: 5px;
+}
+
+.maskinarticle h2{
+    display: flex;
+    align-items: center;
+    border: 4px solid orange;
+    font-size: 10vw;
+    height: 7vh;
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.589);
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    background: rgba(0, 0, 0, 0.788);
+    color: white;
+    border: 2px solid white;
+}
+
+/* .maskinarticle h3{ */
+    /* border: 4px solid orange; */
+    /* background: rgba(0, 0, 0, 0.575); */
+/* } */
 
 /* HÄR HAR VI DESKTOP LAYOUT */
 
@@ -258,7 +309,7 @@ html{
     
         grid-template-rows: 15fr, 5fr, 5fr, 3fr;
         grid-template-columns: 15vw;
-        width: 20vw;
+        /* width: 20vw; */
         height: 70vh;
        
     }
@@ -272,6 +323,31 @@ html{
         width: 18vw; 
         height: auto;
         
+    }
+
+    .navbarbutton{
+        width: 20vw;
+    }
+
+    #navbar{
+        left: -90vw;
+    }
+
+    .machineimg{
+        width: 450px;
+        height: auto;
+    }
+
+    .maskinarticle h2{
+        font-size: 3.4rem;
+    }
+
+    .maskinarticle h3{
+        width: 600px;
+    }
+
+    .maskinarticle h4{
+        width: 600px;
     }
 
 }
