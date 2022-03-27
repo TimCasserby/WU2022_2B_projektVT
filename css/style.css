@@ -350,4 +350,29 @@ footer{
         width: 600px;
     }
 
+
+    #maskinersection{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 1250px){
+        .maskinarticle{
+            width: 48vw;
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        .maskinarticle h3{
+            width: 47vw;
+        }
+    
+        .maskinarticle h4{
+            width: 47vw;
+        }
+
+    }
+
+
 }
