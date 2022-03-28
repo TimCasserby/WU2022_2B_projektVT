@@ -30,6 +30,7 @@ h2{
     font-size: 6vw;
 }
 
+
 #schooltitle{
     display: flex;
     flex-direction: column;
@@ -133,7 +134,7 @@ align-items: center;
 .burger{
     position: fixed;
     right: 0px;
-    margin-right: 3.125rem;
+    margin-right: 3.3rem;
     cursor: pointer;
 }
 
@@ -162,15 +163,15 @@ html{
     "BILD INFO"
     "BILD KONT";
 
-    grid-template-rows: 8fr 15fr 5fr;
-    grid-template-columns: 40vw 54vw;
-    width: 95vw;
-    height: 30vh;
+    grid-template-rows: minmax(1vw, 110px) 15fr 5fr;
+    grid-template-columns: minmax(60vw, 400px) 36vw;
+    width: 97vw;
+    height: 61.5vw;
     border: 3px solid black;
 }
  /* ID ÄR HASHTAG KLASS ÄR PUNKT */
 .styrelseimg{
-    width: 28.5vh; 
+    width: 100%; 
     border: 3px solid black;
     height: auto;
     
@@ -198,11 +199,21 @@ article h3{
     grid-area: INFO;
     background-color: rgba(255, 255, 255, 0.568);
     color: black;
+    word-wrap: break-word;
 }
 
 article h4{
     grid-area: KONT;
     background-color: rgba(255, 166, 0, 0.603);
+    word-wrap: break-word;
+}
+
+.styrelsearticle h3{
+    font-size: 4vw;
+}
+
+.styrelsearticle h4{
+    font-size: 4vw;
 }
 
 
@@ -272,7 +283,7 @@ footer{
 
 /* HÄR HAR VI DESKTOP LAYOUT */
 
-@media screen and (min-width: 630px){
+@media screen and (min-width: 612px){
     #indexmenu{
         flex-direction: row;
         
@@ -299,31 +310,7 @@ footer{
         width: 700px;
     }
 
-    #styrelsesection article{
-        grid-template-areas:
-        "BILD"
-        "NAMN"
-        "INFO"
-        "KONT";
-    
-    
-        grid-template-rows: 15fr, 5fr, 5fr, 3fr;
-        grid-template-columns: 15vw;
-        /* width: 20vw; */
-        height: 70vh;
-       
-    }
 
-    #styrelsesection{
-        display: flex;
-        flex-direction: row;
-    }
-
-    .styrelseimg{
-        width: 18vw; 
-        height: auto;
-        
-    }
 
     .navbarbutton{
         width: 20vw;
@@ -355,6 +342,49 @@ footer{
         display: flex;
         flex-wrap: wrap;
     }
+
+    @media screen and (min-width: 1000px){
+    
+        #styrelsesection article{
+            grid-template-areas:
+            "BILD"
+            "NAMN"
+            "INFO"
+            "KONT";
+        
+        
+            grid-template-rows: 5fr, 5fr, 15fr, 3fr;
+            grid-template-columns: 15vw;
+            /* width: 20vw; */
+            height: 80vh;
+           
+        }
+    
+        #styrelsesection{
+            display: flex;
+            flex-direction: row;
+        }
+    
+        .styrelseimg{
+            width: 18.5vw; 
+            height: auto;
+            
+        }
+
+        .styrelsearticle h3{
+            height: 300px;
+            width: 18.5vw;
+            font-size: 150%;
+        }
+
+        .styrelsearticle h4{
+            height: 100px;
+            width: 18.5vw;
+            font-size: 150%;
+        }
+  
+    
+ 
 
     @media screen and (min-width: 1250px){
         .maskinarticle{
