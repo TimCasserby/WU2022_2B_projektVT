@@ -13,8 +13,8 @@ html {
     justify-content: center;
     align-items: center;
     align-content: center;
-    background: url("../img/raindrops.jpg");
-    background-size: 100vw;
+    background: url("../img/makerspace.jpg");
+    background-size: 200vh;
 }
 
 h1{
@@ -30,6 +30,10 @@ h2{
     font-size: 6vw;
 }
 
+#indexbody h2{
+    font-size: 30px;
+}
+
 
 #schooltitle{
     display: flex;
@@ -38,7 +42,7 @@ h2{
     border: 3px solid white;
     background: black;
     width: 90vw;
-    height: 140px;
+    height: 100%;
     margin: 10px;
 }
 
