@@ -77,10 +77,10 @@ h2{
     align-items: center;
     justify-content: center;
     /* border: 2px solid white; */
-    background: rgb(168, 109, 0);
+    background: rgb(138, 90, 0);
     font-size: 9.5vw;
-    margin: 10px;
-    width: 93%;
+    margin: 7px;
+    width: 98%;
 }
 
 .indexnav:hover{
