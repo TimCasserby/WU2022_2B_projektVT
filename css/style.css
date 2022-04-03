@@ -47,17 +47,17 @@ h2{
 }
 
 #indexmenu{
-display: flex;
-flex-direction: column;
-position: absolute;
-bottom: 20vh;
-height: 30vh;
-width: 100vw;
-margin: 0px;
-align-content: space-around;
-justify-content: space-around;
-align-content: center;
-align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 20vh;
+    height: 30vh;
+    width: 100vw;
+    margin: 0px;
+    align-content: space-around;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
 }
 
 .indexnav{
@@ -294,7 +294,7 @@ footer{
     font-size: 20px;
     padding: 5px;
 
-    width: 99.5vw;
+    width: 100vw;
     height: 50px;
     margin: 0px;
 
@@ -496,96 +496,99 @@ footer{
     }
 
 
-    @media screen and (min-width: 1000px){
+   
+}
+
+@media screen and (min-width: 1000px){
     
-        #styrelsesection article{
-            grid-template-areas:
-            "BILD"
-            "NAMN"
-            "INFO"
-            "KONT";
-        
-        
-            grid-template-rows: 15fr, 10fr, 15fr, 3fr;
-            grid-template-columns: 15vw;
-            /* width: 20vw; */
-            height: 620px;
-            width: 19.5vw;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: start;
-           
-        }
-
-        .kontakttext{
-            width: 800px;
-        }
-
-        
-        #styrelsefooter{
-            position: absolute;
-            bottom: 0px;
-            
-        }
+    #styrelsesection article{
+        grid-template-areas:
+        "BILD"
+        "NAMN"
+        "INFO"
+        "KONT";
     
-        #styrelsesection{
-            display: flex;
-            flex-direction: row;
-        }
     
-        .styrelseimg{
-            width: 18.5vw; 
-            height: auto;
-            display: flex;
-            justify-content: start;
-            
-            
-        }
+        grid-template-rows: 15fr, 10fr, 15fr, 3fr;
+        grid-template-columns: 15vw;
+        /* width: 20vw; */
+        height: 620px;
+        width: 19.5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+       
+    }
 
-        .styrelsearticle h2{
-            font-size: 5vw;
-        }
+    .kontakttext{
+        width: 800px;
+    }
 
-        .styrelsearticle h3{
-            height: 300px;
-            width: 18.5vw;
-            font-size: 20px;
-        }
-
-        .styrelsearticle h4{
-            height: 100px;
-            width: 18.5vw;
-            font-size: 130%;
-        }
-
-        
-  
-        footer{
-            font-size: 40px;
-            height: 50px;
-        }
- 
-
-    @media screen and (min-width: 1250px){
-        .maskinarticle{
-            width: 48vw;
-            display: flex;
-            flex-direction: column;
-            
-        }
-
-        .maskinarticle h3{
-            width: 47vw;
-        }
     
-        .maskinarticle h4{
-            width: 47vw;
-        }
-        
-
+    #styrelsefooter{
+        position: absolute;
+        bottom: 0px;
         
     }
 
+    #styrelsesection{
+        display: flex;
+        flex-direction: row;
     }
+
+    .styrelseimg{
+        width: 18.5vw; 
+        height: auto;
+        display: flex;
+        justify-content: start;
+        
+        
+    }
+
+    .styrelsearticle h2{
+        font-size: 5vw;
+    }
+
+    .styrelsearticle h3{
+        height: 300px;
+        width: 18.5vw;
+        font-size: 20px;
+    }
+
+    .styrelsearticle h4{
+        height: 100px;
+        width: 18.5vw;
+        font-size: 130%;
+    }
+
+    
+
+    footer{
+        font-size: 40px;
+        height: 50px;
+    }
+
+
+
+}
+
+@media screen and (min-width: 1250px){
+    .maskinarticle{
+        width: 48vw;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .maskinarticle h3{
+        width: 47vw;
+    }
+
+    .maskinarticle h4{
+        width: 47vw;
+    }
+    
+
+    
 }
