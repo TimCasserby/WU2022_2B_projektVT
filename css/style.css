@@ -78,7 +78,7 @@ h2{
     justify-content: center;
     /* border: 2px solid white; */
     background: rgb(168, 109, 0);
-    font-size: 11vw;
+    font-size: 9.5vw;
     margin: 10px;
     width: 93%;
 }
@@ -243,8 +243,9 @@ article h4{
     background: black;
     font-size: 11vw;
     margin: 5px;
-    width: 65vw;
+    width: 60vw;
     border-radius: 4px;
+    
 }
 
 .navbarbutton:hover{
