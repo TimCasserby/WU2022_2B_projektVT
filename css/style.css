@@ -14,7 +14,7 @@ html {
     align-items: center;
     align-content: center;
     background: url("../img/makerspace.jpg");
-    background-size: 200vh;
+    background-size: 210vh;
 }
 
 h1{
@@ -219,7 +219,7 @@ article h4{
 }
 
 .styrelsearticle h3{
-    font-size: 4vw;
+    font-size: 3.8vw;
 }
 
 .styrelsearticle h4{
