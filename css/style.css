@@ -512,7 +512,7 @@ footer{
         grid-template-rows: 15fr, 10fr, 15fr, 3fr;
         grid-template-columns: 15vw;
         /* width: 20vw; */
-        height: 620px;
+        height: 70vh;
         width: 19.5vw;
         display: flex;
         flex-direction: column;
