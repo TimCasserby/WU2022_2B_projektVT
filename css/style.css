@@ -5,7 +5,7 @@
     text-decoration: none;
 }
 html {
-    width: 100vw;
+    width: 100%;
 }
 
 #indexbody{
@@ -29,6 +29,8 @@ h2{
     color: orange;
     font-size: 6vw;
 }
+
+
 
 #indexbody h2{
     font-size: 30px;
@@ -81,6 +83,8 @@ h2{
     font-size: 9vw;
     margin: 7px;
     width: 98%;
+    text-shadow: -2px -2px 0 rgb(49, 48, 48), 2px -2px 0 rgb(49, 48, 48), -2px 2px 0 rgb(49, 48, 48), 2px 2px 0 rgb(49, 48, 48);
+
 }
 
 .indexnav:hover{
@@ -94,7 +98,7 @@ h2{
     display: flex;
     align-items: center;
     background: black;
-    width: 100vw;
+    width: 100%;
     height: 100px;
     margin: 0px;
     padding: 10px;
@@ -108,7 +112,7 @@ h2{
 }
 
 #htmltag{
-    width: 100vw;
+    width: 100%;
 }
 
 
@@ -205,7 +209,7 @@ article h2{
     grid-area: NAMN;
 }
 
-article h3{
+article p .paragraphstyle3{
     grid-area: INFO;
     background-color: rgba(255, 255, 255, 0.568);
     color: black;
@@ -226,8 +230,23 @@ article h4{
     font-size: 4vw;
 }
 
+.paragraphstyle3{
+    grid-area: INFO;
+    background-color: rgba(255, 255, 255, 0.568);
+    color: black;
+    word-wrap: break-word;
+}
+
+.paragraphstyle4{
+    grid-area: KONT;
+    background-color: rgba(255, 166, 0, 0.603);
+    word-wrap: break-word;
+}
 
 #navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 10px;
     position: fixed;
     left: -135vw;
@@ -244,7 +263,22 @@ article h4{
     background: black;
     font-size: 11vw;
     margin: 5px;
-    width: 60vw;
+    margin-bottom: 3px;
+    width: 60%;
+    border-radius: 4px;
+    
+}
+
+#navbarsmallbutton{
+    display: flex;
+    color: white;
+    border: 2px solid white;
+    background: black;
+    justify-content: center;
+    align-content: center;
+    height: 60px;
+    margin: 5px;
+    width: 70%;
     border-radius: 4px;
     
 }
@@ -296,7 +330,7 @@ footer{
     font-size: 20px;
     padding: 5px;
 
-    width: 100vw;
+    width: 100%;
     height: 50px;
     margin: 0px;
 
@@ -319,7 +353,7 @@ footer{
     background: rgba(73, 72, 73, 0.548);
     margin-bottom: 40px;
     border: 5px solid black;
-    width: 100vw;
+    width: 100%;
     margin: 0px;
 }
 .vrarticle h2{
@@ -384,6 +418,20 @@ footer{
     color: white;
 }
 
+#kontaktrubrik{
+    font-size: 26px;
+    word-wrap: break-word;
+    background: rgba(0, 0, 0, 0.603);
+    color: white;
+    border: 2px solid orange;
+    padding: 5px;
+    margin: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 100%;
+    width: 60vw;
+}
+
 .kontakttext{
     font-size: 26px;
     word-wrap: break-word;
@@ -394,6 +442,7 @@ footer{
     margin: 5px;
     margin-bottom: 150px;
     height: 100%;
+    width: 60vw;
 }
 
 .kontakttext a{
@@ -482,7 +531,7 @@ footer{
         font-size: 3.4rem;
     }
 
-    .maskinarticle h3{
+    .maskinarticle p .paragraphstyle3{
         width: 600px;
         padding: 2px;
     }
@@ -553,7 +602,7 @@ footer{
         font-size: 5vw;
     }
 
-    .styrelsearticle h3{
+    .styrelsearticle p .paragraphstyle3{
         height: 300px;
         width: 18.5vw;
         font-size: 20px;
