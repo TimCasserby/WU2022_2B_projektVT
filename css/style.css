@@ -62,6 +62,7 @@ h2{
     align-items: center;
 }
 
+
 .indexnav{
     display: flex;
     color: white;
@@ -118,7 +119,7 @@ h2{
 
 #styrelsenbody{
     background: url("../img/purpleblacksky.jpg"); 
-    background-size: 100vw;
+    background-size: 100%;
     margin: 0px;
     width: 100%;
 }
@@ -180,8 +181,9 @@ html{
     "BILD KONT";
 
     grid-template-rows: minmax(1vw, 110px) 15fr 5fr;
-    grid-template-columns: minmax(60vw, 400px) 36vw;
+    grid-template-columns: minmax(60%, 400px) 36%;
     width: 97vw;
+    max-width: 100%;
     height: 61.5vw;
     border: 2px solid grey;
     margin-bottom: 10px;
@@ -224,14 +226,14 @@ article .paragraphstyle4{
 }
 
 .styrelsearticle .paragraphstyle3{
-    font-size: 3.8vw;
+    font-size: 3.5vw;
     padding: 5px;
     margin: 2px;
     border: 2px solid rgb(255, 255, 255);
 }
 
 .styrelsearticle .paragraphstyle4{
-    font-size: 4vw;
+    font-size: 3.5vw;
     padding: 5px;
     margin: 2px;
     border: 2px solid white;
@@ -391,6 +393,7 @@ footer{
     height: 200px;
     font-size: 1.3rem;
     padding: 5px;
+    border-radius: 5px;
 }
 
 #vruseh3{
@@ -421,12 +424,14 @@ footer{
 #guidelink{
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: rgba(116, 0, 131, 0.568);
     color: white;
     word-wrap: break-word;
     font-size: 1.5rem;
     height: 60px;
     width: 100%;
+    border-radius: 5px;
 }
 
 #vrequipment{
@@ -491,6 +496,10 @@ footer{
     color: white;
 }
 
+#indexinfobar{
+    position: absolute;
+    bottom: -20vh;
+}
 
 /* HÄR HAR VI DESKTOP LAYOUT */
 
@@ -505,7 +514,27 @@ footer{
 @media screen and (min-width: 612px){
     #indexmenu{
         flex-direction: row;
+        bottom: 40vh;
         
+    }
+
+    #indexinfobar{
+        display: flex;
+        bottom: 20vh;
+        flex-direction: row;
+        margin: 7px;
+    }
+
+    .indexinfo{
+        display: flex;
+        color: white;
+        border: 2px solid white;
+        background: black;
+        font-size: 1.5vw;
+        bottom: 20vh;
+        margin: 5px;
+        width: 20vw;
+        border-radius: 4px;
     }
 
    
@@ -672,7 +701,7 @@ footer{
     .styrelsearticle .paragraphstyle4{
         height: 100px;
         width: 18.5vw;
-        font-size: 130%;
+        font-size: 110%;
     }
 
     
@@ -754,13 +783,17 @@ footer{
         color: white;
         align-items: center;
         justify-content: center;
+        font-size: 2vw;
         /* border: 2px solid white; */
         background: rgb(138, 90, 0);
-        font-size: 2vw;
         margin: 7px;
         width: 98%;
         text-shadow: -2px -2px 0 rgb(49, 48, 48), 2px -2px 0 rgb(49, 48, 48), -2px 2px 0 rgb(49, 48, 48), 2px 2px 0 rgb(49, 48, 48);
     
+    }
+
+    #indexmenu a .indexnavtext{
+        font-size: 3.5vw;
     }
 
     .nav-active{
